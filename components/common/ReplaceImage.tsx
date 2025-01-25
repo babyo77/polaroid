@@ -1,30 +1,30 @@
-'use client'
+"use client";
 
-import { useRef } from 'react'
-import { Button } from "@/components/ui/button"
-import { Wand2 } from "lucide-react"
-import { cn } from "@/lib/utils"
+import { useRef } from "react";
+import { Button } from "@/components/ui/button";
+import { Wand2 } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 interface ReplaceImageProps {
-  onReplace: (file: File) => void
+  onReplace: (file: File) => void;
 }
 
 export default function ReplaceImage({ onReplace }: ReplaceImageProps) {
-  const fileInputRef = useRef<HTMLInputElement>(null)
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0]
+    const file = e.target.files?.[0];
     if (file) {
-      onReplace(file)
+      onReplace(file);
     }
-  }
+  };
 
   return (
     <>
       <Button
         variant="ghost"
         className={cn(
-          "flex-1 h-16 lg:flex-initial lg:px-8",
+          "flex-1 h-11 lg:flex-initial lg:px-8",
           "rounded-full bg-zinc-900",
           "text-white/60 hover:text-black",
           "transition-all duration-300",
@@ -45,5 +45,5 @@ export default function ReplaceImage({ onReplace }: ReplaceImageProps) {
         className="hidden"
       />
     </>
-  )
-} 
+  );
+}
