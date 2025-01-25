@@ -604,11 +604,10 @@ export default function PolaroidGenerator() {
                             <Button
                               title={tool.label}
                               key={tool.id}
-                              variant="ghost"
                               size="icon"
                               className={cn(
                                 "rounded-xl flex-1 h-14  ",
-                                "backdrop-blur-xl transition-all duration-300",
+                                "backdrop-blur-xl bg-white/10 transition-all duration-300",
                                 "group relative overflow-hidden",
                                 activeTool === tool.id
                                   ? "bg-white/20 text-white shadow-lg"
