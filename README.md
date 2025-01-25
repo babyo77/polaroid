@@ -1,4 +1,4 @@
-# 📸 Polaroid Maker
+# 📸 Polaroid Image Maker
 
 Transform your digital photos into vintage-style Polaroid pictures with custom frames and filters.  
 Create, customize, and download your personalized Polaroids instantly.
