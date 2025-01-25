@@ -427,7 +427,7 @@ export default function PolaroidGenerator() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-black via-black/95 to-black/90">
+    <div className="bg-gradient-to-b from-black via-black/95 to-black/90">
       {isCameraOpen && (
         <CameraCapture
           onCapture={handleCameraCapture}
@@ -441,7 +441,7 @@ export default function PolaroidGenerator() {
       >
         built via cursor ai
       </Link>
-      <div className="h-screen flex flex-col lg:flex-row lg:overflow-hidden lg:gap-8 lg:p-8">
+      <div className="h-screen flex flex-col lg:flex-col lg:overflow-hidden lg:gap-8 lg:p-8">
         {backgroundImage && (
           <BlurredBackground
             image={backgroundImage}
@@ -450,7 +450,7 @@ export default function PolaroidGenerator() {
         )}
 
         {/* Main Content */}
-        <div className="flex-1 overflow-auto px-4 py-6 relative z-10 lg:flex lg:items-center lg:justify-center">
+        <div className="flex-1 overflow-auto  px-4 relative z-10 lg:flex lg:items-center lg:justify-center">
           <div className="max-w-md mx-auto space-y-6 lg:max-w-none lg:w-full lg:flex lg:items-center lg:justify-center lg:gap-16 lg:px-4">
             {/* Left side - Polaroid preview */}
             <div
@@ -460,7 +460,7 @@ export default function PolaroidGenerator() {
               )}
             >
               {/* Header - Only show on mobile */}
-              <div className="text-center space-y-0.5 mb-4 mt-2 lg:hidden">
+              <div className="text-center space-y-0.5 mb-4 mt-12 lg:hidden">
                 <h1 className="text-xl font-medium bg-gradient-to-r from-white/90 to-white/70 bg-clip-text text-transparent">
                   Polaroid
                 </h1>
@@ -722,16 +722,16 @@ export default function PolaroidGenerator() {
         </div>
 
         {/* Bottom Navigation */}
-        <div className="lg:fixed lg:bottom-0 lg:left-0 lg:right-0 lg:z-20">
-          <BottomNavigation
-            image={image}
-            loading={loading}
-            onDownload={downloadImage}
-            onFileInputClick={() => fileInputRef.current?.click()}
-            onCameraClick={() => setIsCameraOpen(true)}
-            onReplace={processFile}
-          />
-        </div>
+
+        <BottomNavigation
+          image={image}
+          loading={loading}
+          onDownload={downloadImage}
+          onFileInputClick={() => fileInputRef.current?.click()}
+          onCameraClick={() => setIsCameraOpen(true)}
+          onReplace={processFile}
+        />
+
         {isCropToolOpen && image && (
           <CropTool
             image={image}
