@@ -11,7 +11,7 @@ export default function BlurredBackground({
   className,
 }: BlurredBackgroundProps) {
   return (
-    <div className="absolute inset-0 overflow-hidden">
+    <div className="absolute max-md:hidden inset-0 overflow-hidden">
       <div
         className={cn(
           "absolute inset-[-1%] bg-cover transition-all duration-300 bg-center bg-no-repeat blur-[20px]",
