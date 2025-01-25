@@ -548,7 +548,6 @@ export default function PolaroidGenerator() {
                               src={processedImage || "/placeholder.svg"}
                               alt="Processed image"
                               fill
-                              crossOrigin="anonymous"
                               className="object-cover"
                             />
                           )}
