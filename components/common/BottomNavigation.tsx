@@ -25,7 +25,7 @@ export default function BottomNavigation({
   return (
     <div className=" p-4 md:fixed md:left-1/2 md:pb-7 z-50 md:-translate-x-1/2 md:bottom-0 md:p-0">
       <div className="max-w-md mx-auto lg:max-w-lg">
-        <div className="flex items-center  justify-around gap-3 lg:justify-center lg:gap-4">
+        <div className="flex items-center justify-around gap-3 lg:justify-center lg:gap-4">
           {image ? (
             <>
               <ReplaceImage onReplace={onReplace} />
