@@ -437,7 +437,7 @@ export default function PolaroidGenerator() {
         href={"https://tanmay.xyz"}
         className=" absolute top-3 left-3 text-gray-200 opacity-50 hover:underline underline-offset-4 hover:opacity-100 text-xs font-mono"
       >
-        by ai
+        built via cursor ai
       </Link>
       <div className="h-screen flex flex-col lg:flex-row lg:overflow-hidden lg:gap-8 lg:p-8">
         {backgroundImage && (
@@ -449,7 +449,7 @@ export default function PolaroidGenerator() {
 
         {/* Main Content */}
         <div className="flex-1 overflow-auto px-4 py-6 relative z-10 lg:flex lg:items-center lg:justify-center">
-          <div className="max-w-md mx-auto space-y-6 lg:max-w-none lg:w-full lg:flex lg:items-center lg:justify-center lg:gap-10 lg:px-4">
+          <div className="max-w-md mx-auto space-y-6 lg:max-w-none lg:w-full lg:flex lg:items-center lg:justify-center lg:gap-16 lg:px-4">
             {/* Left side - Polaroid preview */}
             <div
               className={cn(
