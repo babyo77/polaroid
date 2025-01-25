@@ -13,7 +13,6 @@ Create, customize, and download your personalized Polaroids instantly.
 
 ## 🚀 Features
 
-- Image Cropping: Precisely crop your images to fit the Polaroid frame
 - Custom Filters: Apply vintage-style filters to enhance your photos
 - PWA Support: Install as a standalone app on your device
 
@@ -27,5 +26,3 @@ Create, customize, and download your personalized Polaroids instantly.
 ## 🎞️ Preview
 
 https://github.com/user-attachments/assets/e34c16c1-82ec-4c4d-910e-4eaa4ce9797e
-
-
