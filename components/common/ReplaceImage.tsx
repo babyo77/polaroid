@@ -27,7 +27,7 @@ export default function ReplaceImage({ onReplace }: ReplaceImageProps) {
           "flex-1 h-11 lg:flex-initial lg:px-8",
           "rounded-full",
           "text-white/60",
-          "transition-all duration-300",
+          "transition-all duration-300 md:hover:bg-none",
           "group relative overflow-hidden"
         )}
         onClick={() => fileInputRef.current?.click()}
