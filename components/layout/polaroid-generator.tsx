@@ -496,7 +496,7 @@ export default function PolaroidGenerator() {
                       <p className="text-lg font-medium text-white/80">
                         Drag and drop your image here
                       </p>
-                      <p className="text-lg text-white/60">or</p>
+                      {/* <p className="text-lg text-white/60">or</p> */}
                       <div className="flex gap-2 justify-center">
                         <Button
                           variant="outline"
