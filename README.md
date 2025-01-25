@@ -25,3 +25,7 @@ Create, customize, and download your personalized Polaroids instantly.
 4. Open `http://localhost:3000` in your browser
 
 ## 🎞️ Preview
+
+https://github.com/user-attachments/assets/e34c16c1-82ec-4c4d-910e-4eaa4ce9797e
+
+
