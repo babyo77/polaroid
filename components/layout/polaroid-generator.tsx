@@ -300,10 +300,12 @@ export default function PolaroidGenerator() {
     if (toolId === "filters") {
       setIsPresetSelectionOpen((prev) => !prev);
       setActiveTool(null);
-    } else if (toolId === "crop") {
-      setIsCropToolOpen(true);
-      setActiveTool(null);
-    } else {
+    }
+    // else if (toolId === "crop") {
+    //   setIsCropToolOpen(true);
+    //   setActiveTool(null);
+    // }
+    else {
       setIsPresetSelectionOpen(false);
       setActiveTool(activeTool === toolId ? null : toolId);
     }
