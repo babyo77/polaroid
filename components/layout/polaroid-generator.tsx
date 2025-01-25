@@ -718,18 +718,16 @@ export default function PolaroidGenerator() {
               </div>
             )}
           </div>
+          {/* Bottom Navigation */}
+          <BottomNavigation
+            image={image}
+            loading={loading}
+            onDownload={downloadImage}
+            onFileInputClick={() => fileInputRef.current?.click()}
+            onCameraClick={() => setIsCameraOpen(true)}
+            onReplace={processFile}
+          />
         </div>
-
-        {/* Bottom Navigation */}
-
-        <BottomNavigation
-          image={image}
-          loading={loading}
-          onDownload={downloadImage}
-          onFileInputClick={() => fileInputRef.current?.click()}
-          onCameraClick={() => setIsCameraOpen(true)}
-          onReplace={processFile}
-        />
 
         {isCropToolOpen && image && (
           <CropTool
