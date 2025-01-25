@@ -435,9 +435,9 @@ export default function PolaroidGenerator() {
 
       <Link
         href={"https://tanmay.xyz"}
-        className=" fixed top-3 left-3 text-gray-200 opacity-50 hover:underline underline-offset-4 hover:opacity-100 text-xs font-mono"
+        className=" absolute top-3 left-3 text-gray-200 opacity-50 hover:underline underline-offset-4 hover:opacity-100 text-xs font-mono"
       >
-        by babyo7_
+        by ai
       </Link>
       <div className="h-screen flex flex-col lg:flex-row lg:overflow-hidden lg:gap-8 lg:p-8">
         {backgroundImage && (
