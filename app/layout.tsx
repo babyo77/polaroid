@@ -1,5 +1,6 @@
 import { Metadata, Viewport } from "next";
 import "../styles/globals.css";
+import Analytics from "@/components/analytics";
 
 export const metadata: Metadata = {
   title: "Polaroid Maker",
@@ -65,7 +66,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`antialiased`}>{children}</body>
+      <body className={`antialiased`}>
+        <Analytics />
+        {children}
+      </body>
     </html>
   );
 }
