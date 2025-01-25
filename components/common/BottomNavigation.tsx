@@ -23,16 +23,16 @@ export default function BottomNavigation({
   onReplace,
 }: BottomNavigationProps) {
   return (
-    <div className="px-6 py-4">
+    <div className=" p-4 md:fixed md:left-1/2 md:pb-7 z-50 md:-translate-x-1/2 md:bottom-0 md:p-0">
       <div className="max-w-md mx-auto lg:max-w-lg">
-        <div className="flex items-center justify-around gap-3 lg:justify-center lg:gap-4">
+        <div className="flex items-center  justify-around gap-3 lg:justify-center lg:gap-4">
           {image ? (
             <>
               <ReplaceImage onReplace={onReplace} />
               <Button
                 variant="ghost"
                 className={cn(
-                  "flex-1 h-16 lg:flex-initial lg:px-8",
+                  "flex-1 h-11 lg:flex-initial lg:px-8",
                   "rounded-full bg-zinc-900",
                   "text-white/60 hover:text-black",
                   "transition-all duration-300",
@@ -48,9 +48,8 @@ export default function BottomNavigation({
               <Button
                 variant="ghost"
                 className={cn(
-                  "flex-1 h-16 lg:flex-initial lg:px-8",
+                  "flex-1 h-11 lg:flex-initial lg:px-8",
                   "rounded-[30px]",
-                  "bg-gradient-to-r from-red-500 to-pink-500",
                   "text-white/60 hover:text-black",
                   "transition-all duration-300",
                   "group relative overflow-hidden"
@@ -71,7 +70,7 @@ export default function BottomNavigation({
               <Button
                 variant="ghost"
                 className={cn(
-                  "flex-1 h-16 lg:flex-initial lg:px-8",
+                  "flex-1 h-11 lg:flex-initial lg:px-8",
                   "rounded-full bg-zinc-900",
                   "text-white/60 hover:text-black",
                   "transition-all duration-300",
@@ -87,7 +86,7 @@ export default function BottomNavigation({
               <Button
                 variant="ghost"
                 className={cn(
-                  "flex-1 h-16 lg:flex-initial lg:px-8",
+                  "flex-1 h-11 lg:flex-initial lg:px-8",
                   "rounded-full bg-zinc-900",
                   "text-white/60 hover:text-black",
                   "transition-all duration-300",
