@@ -441,7 +441,7 @@ export default function PolaroidGenerator() {
       >
         maded by cursor ai
       </Link>
-      <div className="h-screen flex flex-col lg:flex-col lg:overflow-hidden lg:gap-8 lg:p-8">
+      <div className="min-h-screen flex flex-col lg:flex-col lg:overflow-hidden lg:gap-8 lg:p-8">
         {backgroundImage && (
           <BlurredBackground
             image={backgroundImage}
