@@ -25,8 +25,8 @@ export default function ReplaceImage({ onReplace }: ReplaceImageProps) {
         variant="ghost"
         className={cn(
           "flex-1 h-11 lg:flex-initial lg:px-8",
-          "rounded-full bg-zinc-900",
-          "text-white/60 hover:text-black",
+          "rounded-full",
+          "text-white/60",
           "transition-all duration-300",
           "group relative overflow-hidden"
         )}
