@@ -35,7 +35,7 @@ export default function BottomNavigation({
                   "flex-1 h-11 lg:flex-initial lg:px-8",
                   "rounded-full",
                   "text-white/60",
-                  "transition-all duration-300 md:hover:bg-transparent max-md:hover:text-muted-foreground",
+                  "transition-all duration-300 max-md:hover:bg-transparent max-md:hover:text-muted-foreground",
                   "group relative overflow-hidden"
                 )}
                 onClick={onCameraClick}
